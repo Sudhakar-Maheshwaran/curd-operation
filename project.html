@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>My Application</title>
+</head>
+<body onload="readAll()">
+    <div class="form-container-create">
+        
+        <div class="header">
+
+            <h1>Register Here</h1>
+
+        </div>
+
+        <form id="form" class="form-create">
+            
+            <div>
+                <label for="">First Name :</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your First Name">
+            </div>
+
+            <div>
+                <label for="">Last Name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your Last Name">
+            </div>
+
+            <div>
+                <label for="">Email Id :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id">
+            </div>
+
+            <div>
+                <label for="">Mobile No :</label>
+                <input type="number" name="mobile" id="mobile" placeholder="Enter your Mobile No">
+            </div>
+<!--
+            <div>
+                <label for="gender">Gender :</label>
+
+                <input type="radio" name="Gender" id="gender">
+                <span for="gender" id="gender">Male</span>
+
+                <input type="radio" name="Gender" id="gender">
+                <span for="gender" id="gender">Female</span>
+
+            </div>
+            -->
+
+            <div>
+                <label for="">Date Of Birth :</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div>
+                <label for="">Address :</label>
+                <textarea name="Address" id="Address"></textarea>
+            </div>
+
+            <button type="button" onclick="createdata()">create</button>
+
+        </form>
+
+    </div>
+
+    <div class="form-container-update">
+
+        <div class="header">
+
+            <h1>Register Here</h1>
+
+        </div>
+
+        <form id="form" class="form-update">
+
+            <input type="text" hidden class="update-id">
+
+            <div>
+                <label for="">First Name :</label>
+                <input type="text" name="fname" id="fname1" placeholder="Enter your First Name">
+            </div>
+
+            <div>
+                <label for="">Last Name :</label>
+                <input type="text" name="lname" id="lname1" placeholder="Enter your Last Name">
+            </div>
+
+            <div>
+                <label for="">Email Id :</label>
+                <input type="email" name="email" id="email1" placeholder="Enter your Email Id">
+            </div>
+
+            <div>
+                <label for="">Mobile No :</label>
+                <input type="number" name="mobile" id="mobile1" placeholder="Enter your Mobile No">
+            </div>
+<!--
+            <div>
+                <label for="Gender">Gender :</label>
+
+                <input type="radio" name="Gender" id="gender1">
+                <span for="Gender" id="gender1">Male</span>
+
+                <input type="radio" name="Gender" id="gender1">
+                <span for="Gender" id="gender1">Female</span>
+
+            </div>
+            -->
+
+            <div>
+                <label for="">Date Of Birth :</label>
+                <input type="date" name="dob" id="dob1">
+            </div>
+
+            <div>
+                <label for="">Address :</label>
+                <textarea name="Address" id="Address1"></textarea>
+            </div>
+
+            <button type="button" onclick="update(id)">update</button>
+
+        </form>
+
+    </div>
+
+    <div class="button">
+        <button class="add-data" onclick="adddata()">Add data</button>
+    </div>
+
+    <div class="data-table">
+        <table class="table">
+            <thead class="table-head">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email Id</th>
+                <th>Mobile No</th>
+                <!--<th>Gender</th>-->
+                <th>Date Of Birth</th>
+                <th>Address</th>
+                <th>action</th>
+            </thead>
+            <tbody class="table-body">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
