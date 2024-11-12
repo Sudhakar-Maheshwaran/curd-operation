@@ -48,6 +48,7 @@ function createdata(){
 function edit(id){
     document.querySelector(".form-container-update").style.display = "block";
     document.querySelector(".add-data").style.display = "none";
+    document.querySelector(".form-container-create").style.display = "none";
 
     var updateObj = data.find(f => f.id === id);
     document.querySelector('.update-id').value = updateObj.id;

@@ -4,9 +4,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .header{
@@ -21,6 +21,7 @@ body{
     border-radius: 5px;
     padding: 10px;
     padding-left: 30px;
+    margin-top: 30px;
 }
 
 label{
@@ -51,7 +52,8 @@ button{
 }
 
 .data-table{
-    margin-top: 30px;
+    display: flex;
+    margin-top: 20px;
     background-color: aliceblue;
     border: 1px solid black;
 }
@@ -74,6 +76,46 @@ tr,th,td{
 .add-data{
     padding: 10px;
     font-size: 20px;
-    margin: 10px;
+    margin: 30px;
 }
 
+@media screen and (max-width: 430px){
+    .form-container-create,.form-container-update{
+        width: 260px;
+        padding: 10px;
+        padding-left: 30px;
+    }
+    .data-table{
+        display: flex;
+        margin-top: 2px;
+        background-color: aliceblue;
+        border: none;
+    }
+    
+    table,thead,tbody,tr,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 3px;
+        margin: 2px;
+    }
+    tr,th,td{
+        padding: 2px;
+        font-size: 7px;
+    }
+    button{
+        display: flex;
+        margin-top: 2px;
+        padding: 2px;
+        border: none;
+        border-radius: 1px;
+        font-size: 5px;
+        background-color: green;
+        color: wheat;
+        cursor: pointer;
+    }
+    .add-data{
+        padding: 5px;
+        font-size: 10px;
+        margin: 30px;
+    }
+}
